@@ -1,0 +1,44 @@
+
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "IBM AML işlem verilerinin standartlaştırılmış staging modeli."
+    columns:
+      - name: islem_zamani
+        description: "İşlemin gerçekleştiği zaman."
+        data_tests:
+          - not_null
+
+      - name: supheli_etiket
+        description: "AML etiketi: 0 normal, 1 şüpheli işlem."
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false
+
+  - name: stg_accounts
+    description: "Banka, hesap ve kuruluş bilgilerinin standartlaştırılmış modeli."
+    columns:
+      - name: banka_id
+        description: "Bankanın benzersiz tanımlayıcısı."
+        data_tests:
+          - not_null
+
+      - name: hesap_numarasi
+        description: "Banka hesabının numarası."
+        data_tests:
+          - not_null
+
+      - name: kurulus_id
+        description: "Hesabın bağlı olduğu kuruluşun kimliği."
+        data_tests:
+          - not_null
+
+  - name: stg_aml_attempts
+    description: "AML senaryo girişimlerinin staging modeli."
+
+  - name: stg_aml_pattern_transactions
+    description: "AML örüntülerine bağlı işlemlerin staging modeli."

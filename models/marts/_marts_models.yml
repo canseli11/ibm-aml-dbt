@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: mart_aml_kpi
+    description: "Genel AML işlem sayıları, şüpheli işlem oranı ve benzersiz hesap göstergeleri."
+
+  - name: mart_currency_payment_risk
+    description: "Para birimi ve ödeme yöntemi kırılımında AML risk analizi."
+
+  - name: mart_payment_method_risk
+    description: "Ödeme yöntemlerine göre şüpheli işlem sayılarını ve oranlarını karşılaştırır."
+
+  - name: mart_bank_transfer_risk
+    description: "Banka içi ve bankalar arası transferlerin şüpheli işlem oranlarını analiz eder."
+
+  - name: mart_daily_aml_risk
+    description: "Günlük işlem hacmini ve şüpheli işlem oranlarını hesaplar."
+
+  - name: mart_daily_anomaly_flags
+    description: "Günlük hacim düşüşlerini ve yüksek şüpheli işlem oranlarını işaretler."
+
+  - name: mart_period_risk_comparison
+    description: "Normal ve anormal dönemlerin işlem hacimlerini ve AML etiket dağılımlarını karşılaştırır."

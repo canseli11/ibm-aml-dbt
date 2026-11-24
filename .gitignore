@@ -1,0 +1,33 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Credentials
+profiles.yml
+.env
+.env.*
+*.json.key
+*service-account*.json
+*credentials*.json
+application_default_credentials.json
+
+# Local settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

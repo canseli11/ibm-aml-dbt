@@ -1,0 +1,20 @@
+
+version: 2
+
+sources:
+  - name: raw
+    database: fifth-howl-508817-h0
+    schema: ibm_aml_banking
+
+    tables:
+      - name: raw_transactions
+        description: "IBM AML ham işlem verileri"
+
+      - name: raw_accounts
+        description: "Banka hesap ve kuruluş bilgileri"
+
+      - name: raw_aml_attempts
+        description: "AML senaryo ve girişim bilgileri"
+
+      - name: raw_aml_pattern_transactions
+        description: "AML örüntülerine bağlı işlemler"

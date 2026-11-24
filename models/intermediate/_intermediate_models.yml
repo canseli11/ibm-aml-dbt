@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: int_transactions_entities
+    description: "İşlem verilerini gönderen ve alıcı kuruluş bilgileriyle ilişkilendirir."
+
+  - name: int_accounts_clean
+    description: "Banka ve hesap bilgilerini standartlaştırır, birleşik hesap anahtarı ve kuruluş türü oluşturur."
+
+  - name: int_transactions_clean
+    description: "İşlem tarihini, hesap anahtarlarını ve AML analizlerinde kullanılan işlem göstergelerini hazırlar."
+
+  - name: int_patterns_linked
+    description: "AML örüntü işlemlerini ilgili senaryo girişimleriyle ilişkilendirir."
