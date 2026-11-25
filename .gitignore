@@ -31,3 +31,4 @@ application_default_credentials.json
 # System files
 .DS_Store
 Thumbs.db
+*.joblib

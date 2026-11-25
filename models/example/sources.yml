@@ -1,4 +1,3 @@
-
 version: 2
 
 sources:
@@ -8,13 +7,31 @@ sources:
 
     tables:
       - name: raw_transactions
-        description: "IBM AML ham işlem verileri"
+        description: "IBM AML ham islem verileri"
 
       - name: raw_accounts
-        description: "Banka hesap ve kuruluş bilgileri"
+        description: "Banka hesap ve kurulus bilgileri"
 
       - name: raw_aml_attempts
-        description: "AML senaryo ve girişim bilgileri"
+        description: "AML senaryo ve girisim bilgileri"
 
       - name: raw_aml_pattern_transactions
-        description: "AML örüntülerine bağlı işlemler"
+        description: "AML oruntulerine bagli islemler"
+
+      - name: mart_h2_siklik_ozet
+        description: "H2 islem sikligi hipotezi ozet tablosu"
+
+      - name: mart_h1_tutar_analizi
+        description: "H1 islem tutari hipotezi istatistik tablosu"
+
+      - name: mart_h3_istatistik
+        description: "H3 banka transfer riski istatistikleri"
+
+      - name: mart_h4_istatistik
+        description: "H4 odeme yontemi istatistikleri"
+
+      - name: mart_h5_istatistik
+        description: "H5 alici hesap hareketliligi istatistikleri"
+
+      - name: mart_h6_istatistik
+        description: "H6 kurulus ve banka cesitliligi regresyon sonuclari"
